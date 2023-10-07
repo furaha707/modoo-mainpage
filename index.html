@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>메인페이지</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main-new.css" />
+		<link
+			rel="stylesheet"
+			href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./assets/js/swiper.min.js"></script>
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<p class="test">시작</p>
+			</div>
+		</section>
+		<!-- S : 영상 슬라이드 -->
+		<section class="section--video section">
+			<div class="container">
+				<div class="section--video-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide item">
+								<a href="#" class="link">
+									<div class="video-bx">
+										<iframe
+											width="560"
+											height="315"
+											src="https://www.youtube.com/embed/peRZnsJ1e04"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide item">
+								<a href="#" class="link">
+									<div class="video-bx">
+										<iframe
+											width="560"
+											height="315"
+											src="https://www.youtube.com/embed/Labkm-1itrE"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide item">
+								<a href="#" class="link">
+									<div class="video-bx">
+										<iframe
+											width="560"
+											height="315"
+											src="https://www.youtube.com/embed/EE2Z3K7bjKk"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide item">
+								<a href="#" class="link">
+									<div class="video-bx">
+										<iframe
+											width="560"
+											height="315"
+											src="https://www.youtube.com/embed/HITNNg6Bkl4"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide item">
+								<a href="#" class="link">
+									<div class="video-bx">
+										<iframe
+											width="560"
+											height="315"
+											src="https://www.youtube.com/embed/xIOVm5XXAu4"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-control">
+							<div class="container">
+								<!-- S : Swiper Pagination -->
+								<div class="swiper-pagination"></div>
+								<!-- E : Swiper Pagination -->
+							</div>
+						</div>
+					</div>
+					<button type="button" class="swiper-button swiper-button--prev">
+						<i class="xi-angle-left"></i>
+					</button>
+					<button type="button" class="swiper-button swiper-button--next">
+						<i class="xi-angle-right"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- E : 영상 슬라이드 -->
+		<script>
+			// 스와이퍼 변수 선언
+			var videoSwiper = new Swiper('.section--video-swiper .swiper-container', {
+				loop: true,
+				slidesPerView: 3,
+				spaceBetween: 30,
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				autoHeight: true,
+				pagination: {
+					el: '.section--video-swiper .swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.section--video-swiper .swiper-button--next',
+					prevEl: '.section--video-swiper .swiper-button--prev',
+				},
+			});
+		</script>
+	</body>
+</html>
+

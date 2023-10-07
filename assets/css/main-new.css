@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+:root {
+  --main-color: #2449A3;
+}
+
+/* 변수사용 */
+.test{
+  color: var(--main-color);
+}
+
+/* 반응형 */
+@media screen and (max-width: 1400px) {
+  .test{
+    font-size: 0.8rem;
+  }
+}
