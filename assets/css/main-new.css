@@ -1,17 +1,68 @@
 @charset "utf-8";
 
 :root {
-  --main-color: #2449A3;
+  --main-color: #2449a3;
 }
 
-/* º¯¼ö»ç¿ë */
-.test{
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+.test {
   color: var(--main-color);
 }
 
-/* ¹ÝÀÀÇü */
+.intro-box {
+  position: relative;
+}
+
+.intro-box .intro-wrapper {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-box .intro-wrapper .intro-text {
+  position: relative;
+}
+
+.intro-box .intro-wrapper .intro-text .intro-text-tit {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.intro-box .intro-wrapper .intro-text .intro-desc {
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.intro-box .intro-wrapper .intro-text .intro-desc .intro-text-desc {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.intro-box .intro-wrapper .intro-list {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-box .intro-wrapper .intro-list .intro-list-menu {
+  height: 2.7rem;
+  width: 11.2rem;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 @media screen and (max-width: 1400px) {
-  .test{
+  .test {
     font-size: 0.8rem;
   }
 }
