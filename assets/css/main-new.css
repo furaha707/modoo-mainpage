@@ -9,6 +9,35 @@
   color: var(--main-color);
 }
 
+/* 공통 */
+.main-common-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.main-common-link {
+  display: inline-block;
+  height: 54px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 2px solid #134aa9;
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  color: #134aa9;
+  width: 220px;
+  transition: all 0.3s; /* 부드럽게 hover로 변환 */
+}
+
+.main-common-link:hover {
+  background-color: #134aa9;
+  color: white;
+}
+
 .intro-box {
   position: relative;
 }
@@ -45,6 +74,7 @@
 
 .intro-box .intro-wrapper .intro-list {
   display: flex;
+  gap: 1.2rem;
   justify-content: center;
 }
 
@@ -52,7 +82,6 @@
   width: 11.2rem;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 1.2rem;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   color: white;
@@ -65,17 +94,20 @@
 }
 
 .vision-box .vision-list {
-  display: flex;
+  display: flex; /* 자식들 정렬만 시킴 */
   justify-content: center;
   margin-top: 4.0625rem;
 }
 
 .vision-box .vision-list .vision-list-menu {
-  margin: 0rem 3.25rem;
+  margin: 0rem 1rem;
+  flex: 1 1 33.33%; /* flex의 자식들의 가로값을 지정해줌. */
 }
 
 .vision-box .vision-list .vision-list-menu .vision-list-menu-head {
   display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .vision-box
@@ -83,18 +115,29 @@
   .vision-list-menu
   .vision-list-menu-head
   .vision-number {
+  display: flex;
   background-color: #2449a3;
   color: white;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  justify-content: center;
-  text-align: center;
+  justify-content: center; /* 수평 */
+  align-items: center; /* 수직 */
+  font-size: 1.3rem;
 }
 
 .vision-box .vision-list .vision-list-menu .vision-line {
   margin: 1.125rem 0;
   border-bottom: 1px solid #111;
+}
+
+.vision-box
+  .vision-list
+  .vision-list-menu
+  .vision-list-menu-head
+  .vision-title {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 /* 프로그램 */
@@ -111,6 +154,20 @@
 }
 
 .program-tit button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: white;
+  color: #2449a3;
+  font-weight: bold;
+  border: none;
+  border: 1px solid;
+  transition: all 0.3s;
+}
+
+.program-tit button:hover {
+  color: white;
+  background-color: #2449a3;
 }
 
 .program-desc {
@@ -118,15 +175,28 @@
   font-size: 1.2rem;
 }
 
+.program-wrapper {
+  display: flex;
+  align-items: flex-end; /* 위로 딱 붙힘 */
+  /* align-items: flex-start;  아래로 딱 붙힘 */
+}
+
+.program-wrapper .program-list-wrapper {
+  width: 70%;
+}
+
+.program-wrappe .program-img {
+  width: 30%;
+}
+
 .program-wrapper .program-list-wrapper .program-symptom-list {
   position: relative;
   width: 100%;
-  height: 100%;
   z-index: 1;
   box-sizing: content-box;
   display: flex;
-  padding-left: 0.5rem;
-  margin-bottom: 25px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .program-symptom-list li .select-space-btn-01 {
@@ -181,7 +251,6 @@
 }
 
 .counselor-show-btn {
-  /* display: table-cell; */
   display: inline-block;
   height: 54px;
   vertical-align: middle;
@@ -193,10 +262,14 @@
   background-color: #fff;
   text-align: center;
   font-weight: bolder;
+  color: #134aa9;
+  width: 220px;
+  transition: all 0.3s; /* 부드럽게 hover로 변환 */
 }
 
-.counselor-show-btn a {
-  color: #134aa9;
+.counselor-show-btn:hover {
+  background-color: #134aa9;
+  color: white;
 }
 
 /* 프로세스 */
@@ -227,7 +300,9 @@
 }
 
 .process-btn-area {
-  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .process-desc {
@@ -236,6 +311,7 @@
 
 .process-desc .process-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .process-desc .process-wrapper .process-desc-img {
