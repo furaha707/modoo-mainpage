@@ -15,6 +15,7 @@
 	<!-- Swiper -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+	<!-- <script src="./assets/js/main.js"></script> -->
 	<script src="./assets/js/main.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 </head>
@@ -69,8 +70,8 @@
 								<p class="vision-number">1</p>
 							</li>
 							<li>
-								<p class="vision-title">사회적 기업으로서</p>
-								<p class="vision-title">상담을 지원합니다</p>
+								<p class="vision-title">내담자 중신</p>
+								<p class="vision-title">맞춤상담</p>
 							</li>
 						</ul>
 						<p class="vision-line"></p>
@@ -87,8 +88,8 @@
 								<p class="vision-number">1</p>
 							</li>
 							<li>
-								<p class="vision-title">사회적 기업으로서</p>
-								<p class="vision-title">상담을 지원합니다</p>
+								<p class="vision-title">만족도 4.5이상</p>
+								<p class="vision-title">다시 찾는 심리상담</p>
 							</li>
 						</ul>
 						<p class="vision-line"></p>
@@ -123,33 +124,33 @@
 				<div class="program-list-wrapper">
 					<ul class="program-symptom-list">
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">자존감결여</a>
+							<a class="counselor-show-btn" data-image="./assets/images/자존감결여.png" href="www.naver.com">자존감결여</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">외모콤플렉스</a>
+							<a class="counselor-show-btn" data-image="./assets/images/외모.png" href="www.naver.com">외모콤플렉스</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">분노조절장애</a>
+							<a class="counselor-show-btn" data-image="./assets/images/분노.png" href="www.naver.com">분노조절장애</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">강박증</a>
+							<a class="counselor-show-btn" data-image="./assets/images/강박.png" href="www.naver.com">강박증</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">공황증</a>
+							<a class="counselor-show-btn" data-image="./assets/images/공황.png" href="www.naver.com">공황증</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">우울증</a>
+							<a class="counselor-show-btn" data-image="./assets/images/우울.png" href="www.naver.com">우울증</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">인터넷중독</a>
+							<a class="counselor-show-btn" data-image="./assets/images/인터넷.png" href="www.naver.com">인터넷중독</a>
 						</li>
 						<li>
-							<a class="counselor-show-btn" href="www.naver.com">부부성상담</a>
+							<a class="counselor-show-btn" data-image="./assets/images/부부성.png" href="www.naver.com">부부성상담</a>
 						</li>
 					</ul>
 				</div>
 				<div class="program-img">
-					<img src="./assets/images/자존감결여.png" alt="self-esteem">
+					<img id="programImage" src="./assets/images/자존감결여.png" alt="self-esteem">
 				</div>
 			</div>
 		</div>
@@ -193,19 +194,22 @@
 			</div>
 			<ul class="process-btn-area">
 				<li>
-					<a class="main-common-link" href="www.naver.com">미혼모부자상담</a>
+					<a class="main-common-link" href="www.naver.com"
+						onmouseover="changeProgramSection(this, '미혼모를 위한 상담', '사회공헌 미혼모부자상담', '우리는 사회공헌 및 기업연계를 통해 미혼모부자상담을 위한 특별한 프로그램을 제공합니다. 이 프로그램은 미혼모부자들의 다양한 상황을 고려하여 심리적 지원과 도움을 제공하며, 미혼모부자들의 삶의 질을 향상시키는 사회적 책임을 다하고자 합니다.', './assets/images/process.png')">미혼모부자상담</a>
 				</li>
 				<li>
-					<a class="main-common-link" href="www.naver.com">한부모가정상담</a>
+					<a class="main-common-link" href="www.naver.com"
+						onmouseover="changeProgramSection(this, '한부모를 위한 상담', '사회공헌 한부모가정상담', '우리는 사회공헌 및 기업연계를 통해 한부모가정상담을 위한 특별한 프로그램을 제공합니다. 이 프로그램은 한부모들의 다양한 상황을 고려하여 심리적 지원과 도움을 제공하며, 한부모들의 삶의 질을 향상시키는 사회적 책임을 다하고자 합니다.', './assets/images/한부모.png')">한부모가정상담</a>
 				</li>
 				<li>
-					<a class="main-common-link" href="www.naver.com">조손가정</a>
+					<a class="main-common-link" href="www.naver.com"
+						onmouseover="changeProgramSection(this, '조손가정을 위한 상담', '사회공헌 조손가정', '조손가정을 위한 상담의 내용', './assets/images/조손.png')">조손가정</a>
 				</li>
 			</ul>
 			<div class="process-desc">
 				<div class="process-wrapper">
 					<div class="process-desc-img">
-						<img src="./assets/images/process.png" alt="process">
+						<img id="processImage" src="./assets/images/process.png" alt="process">
 					</div>
 					<div class="process-desc-title">
 						<p>미혼모를 위한 상담</p>
@@ -313,6 +317,11 @@
 				</button>
 			</div>
 		</div>
+		<div class="video-circle">
+			<img src="./assets/images/Ellipse 3.png" alt="동그라미">
+			<img src="./assets/images/Ellipse 4.png" alt="동그라미">
+			<img src="./assets/images/Ellipse 5.png" alt="동그라미">
+		</div>
 	</section>
 	<!-- E : 영상 슬라이드 -->
 
@@ -328,7 +337,10 @@
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="./assets/images/event24.png" alt="아동청소년심리상담할인">
+							<!-- 이미지 주소 연결 -->
+							<a href="https://www.modoohealing.com" target="_blank">
+								<img src="./assets/images/event24.png" alt="아동청소년심리상담할인">
+							</a>
 						</div>
 						<div class="swiper-slide">
 							<img src="./assets/images/event25.png" alt="부모상담30분무료서비스">
@@ -337,7 +349,7 @@
 							<img src="./assets/images/event26.png" alt="재상담평생무료혜택">
 						</div>
 						<div class="swiper-slide">
-							<img src="./assets/images/event27.jpg" alt="스콘 사진 테스트">
+							<img src="./assets/images/10회기이벤트.jpg" alt="재상담평생무료혜택">
 						</div>
 					</div>
 				</div>
@@ -352,7 +364,7 @@
 				<h2>스페셜 연관기업 소개</h2>
 			</div>
 			<div class="business-box-area">
-				<div class="business-box">
+				<a href="https://modoohealing.com" class="business-box">
 					<div class="business-box-text">
 						<h3>말과인간 프로덕션</h3>
 						<br />
@@ -362,7 +374,7 @@
 					<div class="business-box-img">
 						<img src="./assets/images/말과인간프로덕션.png" alt="말과인간프로덕션">
 					</div>
-				</div>
+				</a>
 				<div class="business-box">
 					<div class="business-box-text">
 						<h3>
@@ -416,6 +428,31 @@
 	</section>
 
 	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const programImage = document.getElementById("programImage");
+			const symptomLinks = document.querySelectorAll(".program-symptom-list a");
+
+			symptomLinks.forEach(function (link) {
+				link.addEventListener("mouseenter", function () {
+					const imageUrl = link.getAttribute("data-image");
+					programImage.src = imageUrl;
+				});
+			});
+		});
+
+		function changeProgramSection(link, title, strongText, describe, imageUrl) {
+			const processTitle = link.parentElement.parentElement.parentElement.querySelector('.process-desc-title');
+			const processImage = document.getElementById('processImage');
+			const processDescribe = processTitle.querySelector('.process-desc-describe');
+
+			processTitle.querySelector('p').textContent = title;
+			processTitle.querySelector('strong').textContent = strongText;
+			processDescribe.textContent = describe;
+			processImage.src = imageUrl;
+		}
+	</script>
+
+	<script>
 		// 스와이퍼 변수 선언
 		var videoSwiper = new Swiper('.section--video-swiper .swiper-container', {
 			loop: true,
@@ -435,6 +472,47 @@
 				nextEl: '.section--video-swiper .swiper-button--next',
 				prevEl: '.section--video-swiper .swiper-button--prev',
 			},
+		});
+
+		var newSwiper = new Swiper('.news-swiper .swiper-container', {
+			direction: 'horizontal',
+			slidesPerView: 4, // 한번에 보여줄 슬라이드 개수
+			spaceBetween: 60, //슬라이드 사이 여백
+			loop: true,
+			autoplay: {
+				delay: 3000
+			}
+		});
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const slider = document.querySelector(".partners-image-slider .partners-image-box");
+			const slides = slider.querySelectorAll("div");
+			const slideWidth = slides[0].offsetWidth;
+			let currentIndex = 0;
+
+			// 복제된 슬라이드 추가
+			const clonedSlides = Array.from(slides).map((slide) => slide.cloneNode(true));
+			clonedSlides.forEach((clonedSlide) => slider.appendChild(clonedSlide));
+
+			function updateSlider() {
+				const offset = -currentIndex * slideWidth;
+				slider.style.transform = `translateX(${offset}px)`;
+			}
+
+			function nextSlide() {
+				currentIndex = (currentIndex + 1) % slides.length;
+				updateSlider();
+			}
+
+			function prevSlide() {
+				currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+				updateSlider();
+			}
+
+			setInterval(nextSlide, 3000); // 3초마다 다음 슬라이드로 이동
+
+			// 초기 슬라이더 위치 설정
+			updateSlider();
 		});
 	</script>
 </body>

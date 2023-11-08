@@ -110,6 +110,12 @@
   align-items: center;
 }
 
+.vision-box .vision-list .vision-list-menu .vision-desc {
+  font-size: 0.951rem;
+  color: #444444;
+  font-weight: bold;
+}
+
 .vision-box
   .vision-list
   .vision-list-menu
@@ -173,6 +179,7 @@
 .program-desc {
   margin: 1.2rem 0;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .program-wrapper {
@@ -227,7 +234,7 @@
 .main-tit .inner .tit {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #666666;
+  color: #444444;
   padding: 1.5rem 0;
 }
 
@@ -342,9 +349,13 @@
 }
 
 /* 후기 */
+.section--video {
+}
+
 .video-tit-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .video-tit-wrapper .video-tit-left {
@@ -387,8 +398,51 @@
   color: white;
 }
 
+.section--video {
+  position: relative;
+}
+
+.section--video .video-circle img {
+  position: absolute;
+  z-index: -1;
+}
+
+.section--video .video-circle > img:nth-of-type(1) {
+  top: 40%;
+  left: 0;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.section--video .video-circle > img:nth-of-type(2) {
+  top: 0;
+  right: 45%;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.section--video .video-circle > img:nth-of-type(3) {
+  bottom: -70%;
+  right: 0%;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 /* 소식 */
 .news-tit {
+  margin-bottom: 40px;
 }
 
 .news-tit h1 {
@@ -404,6 +458,11 @@
 }
 
 .container .news-swiper .swiper-container .swiper-wrapper .swiper-slide {
+}
+
+.container .news-swiper .swiper-container .swiper-wrapper .swiper-slide img {
+  /* 자식이 부모의 가로 길이를 따라감 */
+  max-width: 100%;
 }
 
 .news-tit h1 {
@@ -442,6 +501,10 @@
   border-radius: 48px;
   position: relative;
   padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .business-box-area > :nth-child(1) {
@@ -471,10 +534,12 @@
 }
 
 .business-box-area .business-box .business-box-img {
+  text-align: right;
 }
 
 /* 파트너스 */
 .partners-tit {
+  margin-bottom: 50px;
 }
 
 .partners-tit h2 {
@@ -486,25 +551,30 @@
 .partners-image-slider {
   overflow: hidden;
   position: relative;
-  width: 1440px;
-  height: 200px;
+  width: 100%;
 }
 
 .partners-image-slider .partners-image-box {
-  width: 5280px;
   height: 100%;
   display: flex;
-  gap: 1.2rem;
-  flex-wrap: nowrap;
-  animation: bannermove 20s linear infinite;
+  gap: 1.5rem;
+  animation-timing-function: linear;
+  animation: bannermove 50s linear infinite;
+  white-space: nowrap;
+  transform: translateX(0);
+  align-items: center;
+}
+
+.partners-image-slider .partners-image-box > div {
+  flex: 0 0 auto;
 }
 
 @keyframes bannermove {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translate(-50%, 0);
+    transform: translateX(-350%);
   }
 }
 
