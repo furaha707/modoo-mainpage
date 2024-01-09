@@ -161,7 +161,112 @@
   background-color: var(--main-color);
 }
 
-/* 심리검사 신청 절차 */
+/* 첫배너 */
+.banner-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  vertical-align: middle;
+  text-align: center; /* 질문 : 왜 text-align 하니까 이제서야 사진이 가운데로 오는가? */
+}
+
+.banner-text {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text img {
+  margin-bottom: 50px;
+}
+
+.banner-text span {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* 소개 텍스트 */
+.intro-text {
+  text-align: center;
+}
+
+.intro-text img {
+  padding: 40px;
+}
+
+.intro-desc {
+  font-size: 1.3rem;
+  line-height: 2.1;
+}
+
+/* 검사 구성 카드 */
+.card-wrapper {
+  margin-top: 50px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-text .text-top {
+  /* 질문 :  wrapper 기준에서 30px 아래로 내려가야하는데 안내려감 */
+}
+
+.card-text .text-bottom {
+  font-size: 1.5rem;
+}
+
+.card-list {
+}
+
+.card-list .card {
+  background-color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+
+.card-list .card .card-img {
+  width: 55%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card-list .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-list .card .card-title {
+  margin-top: 20px;
+  color: #0f499d;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-list .card .card-desc {
+  margin-top: 20px;
+  font-weight: 1.2rem;
+  line-height: 1.5;
+}
+
+/* 두번째 배너 */
+.banner-img-bottom {
+  margin: 0 auto;
+}
+
 /* progress */
 .process-wrap {
   display: flex;
@@ -181,71 +286,6 @@
 
 .process-item > img {
   height: 250px;
-}
-
-/* 배너 이미지 */
-.banner-img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 75px;
-}
-
-/* 소개 텍스트 */
-.intro-text {
-  text-align: center;
-}
-
-.intro-text img {
-  padding: 40px;
-}
-
-.intro-desc {
-  font-size: 1.3rem;
-  line-height: 2.1;
-}
-
-/* 검사 구성 슬라이드 */
-.swiper {
-  /* width: 100%; */
-  /* height: 100%; */
-  margin-top: 60px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  margin: 0 auto; /* 질문 : 이걸 왜 적용하면 가운데로 오지? */
-  display: block;
-  /* width: 100%; */
-  /* height: 100%; */
-  object-fit: cover;
-}
-
-/* 배너2 */
-
-.banner-text {
-  text-align: center;
-}
-
-.banner-text h4 {
-  font-size: 2rem;
-  color: #2175aa;
-  margin-bottom: 15px;
-}
-
-.banner-text p {
-  font-size: 1.125rem;
-  margin-bottom: 40px;
-  line-height: 1.8;
-}
-
-.banner-img {
 }
 
 /* 시간 안내 */
