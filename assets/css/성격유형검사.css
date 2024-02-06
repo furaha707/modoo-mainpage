@@ -161,20 +161,21 @@
   background-color: var(--main-color);
 }
 
-/* 첫배너 */
-.banner-wrapper {
+/* 성격유형검사 첫배너 */
+
+.character-banner-wrapper {
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-.banner-image {
+.character-banner-image {
   width: 100%;
   vertical-align: middle;
-  text-align: center; /* 질문 : 왜 text-align 하니까 이제서야 사진이 가운데로 오는가? */
+  text-align: center;
 }
 
-.banner-text {
+.character-banner-text {
   padding: 10px 20px;
   border-radius: 10px;
   text-align: center;
@@ -184,11 +185,11 @@
   transform: translate(-50%, -50%);
 }
 
-.banner-text img {
-  margin-bottom: 50px;
+.character-banner-text img {
+  margin-bottom: 100px;
 }
 
-.banner-text span {
+.character-banner-text span {
   font-size: 1.15rem;
   line-height: 1.8;
 }
@@ -196,6 +197,7 @@
 /* 소개 텍스트 */
 .intro-text {
   text-align: center;
+  padding: 80px 0;
 }
 
 .intro-text img {
@@ -209,7 +211,7 @@
 
 /* 검사 구성 카드 */
 .card-wrapper {
-  margin-top: 50px;
+  padding: 80px 0;
 }
 
 .card-text {
@@ -225,6 +227,8 @@
 }
 
 .card-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-list .card {
@@ -233,14 +237,17 @@
   margin: 20px;
   padding: 50px;
   width: 400px;
-  height: 400px;
+  flex: 1 0 40%;
 }
 
 .card-list .card .card-img {
-  width: 55%;
+  width: 50%;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
+  padding: 20px;
+  /* margin-bottom: 40px; */
+  padding-top: 0px;
 }
 
 .card-list .card .card-img img {
@@ -264,8 +271,12 @@
 
 /* 두번째 배너 */
 .banner-img-bottom {
+  display: block;
   margin: 0 auto;
+  width: 100%;
 }
+
+/* 성격유형검사 마지막 css */
 
 /* progress */
 .process-wrap {

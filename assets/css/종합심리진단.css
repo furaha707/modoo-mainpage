@@ -184,22 +184,24 @@
 }
 
 /* 배너 이미지 */
-.banner-img {
+.general-banner-img {
   display: block;
   margin: 0 auto;
   margin-bottom: 75px;
 }
 
+/*종합심리진단 시작 css*/
+
 /* 소개 텍스트 */
-.intro-text {
+.general-intro-text {
   text-align: center;
 }
 
-.intro-text img {
+.general-intro-text img {
   padding: 40px;
 }
 
-.intro-desc {
+.general-intro-desc {
   font-size: 1.3rem;
   line-height: 2.1;
 }
@@ -229,24 +231,27 @@
 
 /* 배너2 */
 
-.banner-text {
+.general-banner-text {
   text-align: center;
+  padding-bottom: 30px;
 }
 
-.banner-text h4 {
+.general-banner-text h4 {
   font-size: 2rem;
   color: #2175aa;
   margin-bottom: 15px;
 }
 
-.banner-text p {
+.general-banner-text p {
   font-size: 1.125rem;
   margin-bottom: 40px;
   line-height: 1.8;
 }
 
-.banner-img {
+.general-banner-img {
 }
+
+/*종합심리진단 마지막 css*/
 
 /* 시간 안내 */
 .time-wrap {

@@ -171,9 +171,35 @@
   background-color: var(--main-color);
 }
 
+/* 심리 진단 플러스 */
+
+/* 검사 구성 슬라이드 */
+.swiper {
+  /* width: 100%; */
+  /* height: 100%; */
+  margin-top: 60px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  margin: 0 auto; /* 질문 : 이걸 왜 적용하면 가운데로 오지? */
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+
 /* 소개 텍스트 */
 .intro-text {
   text-align: center;
+  padding: 100px;
 }
 
 .intro-text img {
@@ -181,8 +207,12 @@
 }
 
 .intro-desc {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 2.1;
+}
+
+.highlighted-text {
+  background: linear-gradient(to top, #fef8b5 40%, transparent 100%);
 }
 
 /* 청소년 종합심층평가 검사 구성 */
@@ -262,14 +292,89 @@
 
 .mid-intro-text {
   position: absolute;
-  transform: translate(50%, -500%);
+  transform: translate(19%, -129%);
+  font-weight: normal;
 }
 
 .mid-intro-text .mid-intro-text-top {
+  margin-bottom: 100px;
+  line-height: 30px;
+  font-size: 1.2rem;
 }
 
 .mid-intro-text .mid-intro-text-bottom {
+  line-height: 30px;
+  font-size: 1.2rem;
 }
+
+.mid-intro-img {
+  width: 100%;
+  text-align: center;
+  background-color: #eff0f5;
+}
+
+.highlight-text {
+  background: linear-gradient(to top, #fef8b5 40%, transparent 100%);
+}
+
+/* 배너2 */
+.banner-text {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.banner-text h4 {
+  font-size: 2rem;
+  color: #2175aa;
+}
+
+.banner-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.banner-img-top {
+}
+
+/* 성격유형검사 */
+/* 첫배너 */
+.character-banner-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.character-banner-image {
+  width: 100%;
+  vertical-align: middle;
+  text-align: center; /* 질문 : 왜 text-align 하니까 이제서야 사진이 가운데로 오는가? */
+}
+
+.character-banner-image img {
+  width: 100%;
+}
+
+.character-banner-text {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.character-banner-text img {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.character-banner-text span {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* 여기까지가 내가 짠 css */
 
 /* 심리검사 신청 절차 */
 /* progress */
